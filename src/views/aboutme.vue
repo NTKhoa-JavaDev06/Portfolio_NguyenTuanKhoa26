@@ -5,7 +5,7 @@
         <div class="col-lg-5 col-md-8 mx-auto">
           <div class="about-img-wrapper">
             <div class="main-img-container shadow-lg rounded-4">
-              <img src="../img/daidien.jpeg" alt="Nguyễn Tuấn Khoa" class="img-fluid main-profile-img">
+              <img src="../img/daidien.jpeg" alt="Nguyen Tuan Khoa" class="img-fluid main-profile-img">
             </div>
             
             <div v-for="(skill, index) in skills" 
@@ -18,37 +18,35 @@
 
         <div class="col-lg-7">
           <div class="ps-lg-4">
-            <p class="text-danger fw-bold mb-1 letter-spacing-2">ABOUT ME</p>
+            <p class="text-danger fw-bold mb-1 letter-spacing-2 text-uppercase">About Me</p>
             <h2 class="display-5 fw-bold mb-4">
               Software Developer <br>
-              <span class="text-muted fs-3">based in Vietnam</span>
+              <span class="text-muted fs-3">based in Ho Chi Minh City, Vietnam</span>
             </h2>
             
-         <div class="content-text text-secondary mb-4">
-            <p class="lead">
-              Hello! I'm <strong>Nguyen Tuan Khoa</strong>, a Software Engineering student at <strong>FPT Polytechnic</strong>.
-            </p>
-            <p>
-              I am deeply passionate about architecting robust Backend systems using Java. My goal is to transition into a 
-              <strong>Junior Java Developer</strong> role through a dedicated professional growth roadmap.
-            </p>
-            <p>
-              Beyond academics, my experience in managing a small business has sharpened my problem-solving skills 
-              and fostered a high sense of responsibility in every project I undertake.
-            </p>
-          </div>
+            <div class="content-text text-secondary mb-4">
+              <p class="lead">
+                Hi there! I'm <strong>Nguyen Tuan Khoa</strong>, a Software Engineering student at <strong>FPT Polytechnic</strong>.
+              </p>
+              <p>
+                I am deeply passionate about architecting robust <strong>Backend systems</strong> with a focus on <strong>Java</strong> technology. My current goal is to leverage my technical skills in a <strong>Junior Java Developer</strong> role within a professional environment.
+              </p>
+              <p>
+                Beyond my academic studies, managing a small business has sharpened my problem-solving abilities and instilled a strong sense of responsibility in every project I undertake.
+              </p>
+            </div>
 
             <div class="row g-4">
               <div class="col-sm-6">
                 <div class="info-card border-start border-danger border-3 ps-3">
-         <h5 class="fw-bold mb-1">Education</h5>
-      <p class="text-muted small m-0">FPT Polytechnic Student</p>
+                  <h5 class="fw-bold mb-1">Education</h5>
+                  <p class="text-muted small m-0">Software Engineering<br>FPT Polytechnic</p>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="info-card border-start border-danger border-3 ps-3">
-                     <h5 class="fw-bold mb-1">Career Goal</h5>
-      <p class="text-muted small m-0">Internship to Junior Developer</p>
+                  <h5 class="fw-bold mb-1">Career Goal</h5>
+                  <p class="text-muted small m-0">Backend Developer<br>(Internship / Junior)</p>
                 </div>
               </div>
             </div>
@@ -60,7 +58,6 @@
 </template>
 
 <script setup>
-// Bạn có thể dễ dàng thêm hoặc bớt skill tại đây
 const skills = [
   { name: 'SQL', img: new URL('../img/sql.png', import.meta.url).href, class: 'b-sql' },
   { name: 'Vue', img: new URL('../img/vue-js.png', import.meta.url).href, class: 'b-vue' },
@@ -70,32 +67,27 @@ const skills = [
 </script>
 
 <style scoped>
+/* Giữ nguyên phần Style bạn đã gửi vì nó đã rất đẹp và chuẩn rồi */
 .letter-spacing-2 { letter-spacing: 2px; }
-
 .about-img-wrapper {
   position: relative;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
 }
-
 .main-img-container {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
 .main-profile-img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.5s ease;
 }
-
 .about-img-wrapper:hover .main-profile-img {
   transform: scale(1.05);
 }
-
-/* Badge Styling */
 .brand-badge {
   position: absolute;
   background: white;
@@ -105,10 +97,7 @@ const skills = [
   z-index: 2;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .logo-img { width: 40px; height: 40px; object-fit: contain; }
-
-/* Vị trí các badge */
 .b-sql { top: 10%; right: -10px; animation: float 4s infinite ease-in-out; }
 .b-vue { top: 35%; right: -25px; animation: float 3.5s infinite ease-in-out 0.5s; }
 .b-bootstrap { top: 60%; right: -10px; animation: float 4.5s infinite ease-in-out 1s; }
@@ -119,18 +108,12 @@ const skills = [
   50% { transform: translateY(-12px); }
 }
 
-/* Hover effect cho cả cụm */
-.about-img-wrapper:hover .brand-badge {
-  right: 0px;
-}
+.about-img-wrapper:hover .brand-badge { right: 0px; }
 
-/* Responsive */
 @media (max-width: 991px) {
   .about-img-wrapper { max-width: 320px; }
   .brand-badge { padding: 8px; }
   .logo-img { width: 30px; height: 30px; }
-  
-  /* Đưa badge vào trong một chút để không bị lòi khỏi màn hình mobile */
   .b-sql, .b-vue, .b-bootstrap { right: 5px; }
   .b-intellij { right: 30px; }
 }
