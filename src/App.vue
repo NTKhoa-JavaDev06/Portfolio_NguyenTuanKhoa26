@@ -1,8 +1,8 @@
 <script setup>
-  import navbar from "./views/Navbar.vue"
-  import home from "./views/Home.vue"
-  import work from "./views/Work.vue"
-  import aboutme from "./views/Aboutme.vue"
+  import Navbar from "./views/Navbar.vue"
+  import Home from "./views/Home.vue"
+  import Work from "./views/Work.vue"
+  import Aboutme from "./views/Aboutme.vue"
   import Skillset from "./views/Skillset.vue"
   import Experience from "./views/Experience.vue"
   import Footer from "./views/Footer.vue"
@@ -11,12 +11,11 @@
 
 <template>
   <div class="app-container">
-    <navbar />
+    <Navbar />
     <main class="main-content">
-      <home />
-      <aboutme />
-      <Skillset />
-       <work />
+      <Home />
+      <Aboutme />
+      <Skillset /><Work />
       <Experience />
       <Contact />
       <Footer />
@@ -47,3 +46,19 @@ html {
   scroll-behavior: smooth;
 }
 </style>
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const isScrolled = ref(false); // Dòng này bắt buộc phải có để hết lỗi đỏ
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+</script>
