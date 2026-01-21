@@ -121,4 +121,4 @@ const skills = [
 @media (max-width: 576px) {
   .display-5 { font-size: 2rem; }
 }
-</style>
+</style>gi
