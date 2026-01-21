@@ -1,11 +1,11 @@
 <script setup>
-  import navbar from "./views/navbar.vue"
-  import home from "./views/home.vue"
-  import work from "./views/work.vue"
-  import aboutme from "./views/aboutme.vue"
+  import navbar from "./views/Navbar.vue"
+  import home from "./views/Home.vue"
+  import work from "./views/Work.vue"
+  import aboutme from "./views/Aboutme.vue"
   import Skillset from "./views/Skillset.vue"
   import Experience from "./views/Experience.vue"
-  import Footer from "./views/footer.vue"
+  import Footer from "./views/Footer.vue"
   import Contact from "./views/Contact.vue"
 </script>
 

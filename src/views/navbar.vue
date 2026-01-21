@@ -17,23 +17,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#Skills">Skills</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="#work">Projects</a>
+            <a class="nav-link" href="#Work">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#Experience">Experience</a>
           </li>
          
           <li class="nav-item ms-lg-4">
-            <a class="nav-link btn-action" href="#contact">Hire Me</a>
+            <a class="nav-link btn-action" href="#Contact">Hire Me</a>
           </li>
         </ul>
       </div>
