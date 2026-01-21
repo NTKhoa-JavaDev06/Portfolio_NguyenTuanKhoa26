@@ -1,5 +1,5 @@
 <template>
-    <section id="skills" class="py-5 bg-light">
+    <section id="Skills" class="py-5 bg-light">
   <div class="container">
     <div class="mb-5 text-center">
       <p class="text-danger fw-bold mb-1 tracking-widest">TECHNICAL STACK</p>

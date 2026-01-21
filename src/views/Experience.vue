@@ -1,5 +1,5 @@
 <template>
-  <section id="experience" class="py-5 bg-white">
+  <section id="Experience" class="py-5 bg-white">
     <div class="container">
       <div class="mb-5 text-start">
         <p class="text-danger fw-bold mb-1 tracking-widest">MY JOURNEY</p>

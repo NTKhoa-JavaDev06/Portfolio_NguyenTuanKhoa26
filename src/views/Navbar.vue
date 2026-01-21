@@ -15,7 +15,7 @@
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Skillset">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#Work">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#Experience">Experience</a></li>
           <li class="nav-item mt-3 mt-lg-0 ms-lg-4">

@@ -1,5 +1,5 @@
 <template>
-  <section id="work" class="work-section py-5">
+  <section id="Work" class="work-section py-5">
     <div class="container">
       <div class="mb-5 text-start header-reveal">
         <p class="text-danger fw-bold mb-1 tracking-widest">SELECTED PORTFOLIO</p>

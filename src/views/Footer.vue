@@ -11,7 +11,7 @@
         </div>
 
         <div class="col-md-4 text-center mb-4 mb-md-0">
-          <p class="mb-0 text-outline-white footer-slogan">BUILDING ROBUST SYSTEMS</p>
+         
         </div>
 
         <div class="col-md-4 text-center text-md-end">
@@ -32,13 +32,7 @@
 
       <hr class="my-4 border-secondary opacity-25">
       
-   <div class="text-center mt-4">
-  <p class="small mb-0" style="color: rgba(240, 248, 255, 0.6); letter-spacing: 1px; font-weight: 500;">
-    Designed with <i class="fas fa-heart text-danger mx-1 shadow-sm"></i> 
-    by <span class="text-white fw-bold">Nguyễn Tuấn Khoa</span> 
-    using <span class="text-info">Vue.js</span> & <span class="text-primary">Bootstrap 5</span>
-  </p>
-</div>
+   
     </div>
   </footer>
 </template>
