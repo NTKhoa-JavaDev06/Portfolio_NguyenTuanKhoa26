@@ -15,17 +15,25 @@
     <main class="main-content">
       <Home />
       <Aboutme />
-      <Skillset /><Work />
+      <Skillset />
+      <Work />
       <Experience />
       <Contact />
       <Footer />
-
     </main>
-  
   </div>
 </template>
 
-<style scoped>
+<style>
+/* Sử dụng thẻ style không có scoped để thiết lập cho toàn bộ trang */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 100px; /* Giúp khi bấm menu, trang cuộn đến đúng vị trí không bị che */
+}
+
 .main-content {
   padding-top: 80px; 
 }
@@ -35,30 +43,4 @@
     padding-top: 60px; 
   }
 }
-section {
-  padding: 100px 0; 
-}
-
-section[id] {
-  scroll-margin-top: 120px; 
-}
-html {
-  scroll-behavior: smooth;
-}
 </style>
-<script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
-
-const isScrolled = ref(false); // Dòng này bắt buộc phải có để hết lỗi đỏ
-
-const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50;
-};
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-});
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
-</script>
