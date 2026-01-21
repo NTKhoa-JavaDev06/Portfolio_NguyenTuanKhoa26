@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top" :class="{ 'navbar-scrolled': isScrolled }">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#home">
-        <img src="../img/chukyfinal.png" style="width: 150px;" alt="Signature Logo">
+      <a class="navbar-brand d-flex align-items-center" href="#Home">
+        <img src="../img/chukyfinal.png" class="nav-logo" alt="Signature Logo">
       </a>
 
       <button 
@@ -16,22 +16,11 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#Home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="#Work">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Experience">Experience</a>
-          </li>
-         
+          <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Work">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Experience">Experience</a></li>
           <li class="nav-item ms-lg-4">
             <a class="nav-link btn-action" href="#Contact">Hire Me</a>
           </li>
@@ -45,132 +34,92 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const isScrolled = ref(false);
+const handleScroll = () => { isScrolled.value = window.scrollY > 50; };
 
-const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50;
-};
-
-// Đóng navbar mobile sau khi chọn link
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
-  
-  const navLinks = document.querySelectorAll('.nav-link');
   const menuToggle = document.getElementById('navbarNav');
+  const navLinks = document.querySelectorAll('.nav-link');
   
   navLinks.forEach((l) => {
     l.addEventListener('click', () => {
-      if (window.innerWidth < 992) {
-       
-        const bsCollapse = new bootstrap.Collapse(menuToggle);
+      if (window.innerWidth < 992 && menuToggle.classList.contains('show')) {
+        // Sử dụng cách gọi an toàn cho Bootstrap 5
+        const bsCollapse = bootstrap.Collapse.getInstance(menuToggle) || new bootstrap.Collapse(menuToggle);
         bsCollapse.hide();
       }
     });
   });
 });
 
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
+onUnmounted(() => { window.removeEventListener('scroll', handleScroll); });
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Montserrat:wght@400;600;800&display=swap');
-
 .navbar {
   --primary-red: #e74c3c;
-  --bg-white: #ffffff;
   --text-dark: #1a1a1a;
-  
   font-family: 'Montserrat', sans-serif;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 25px 0;
-  background-color: transparent; /* Ban đầu trong suốt */
+  transition: all 0.4s ease;
+  padding: 20px 0;
+  background-color: transparent;
 }
 
 .navbar-scrolled {
-  padding: 12px 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid var(--primary-red);
+}
+
+.nav-logo {
+  width: 140px;
+  transition: 0.3s;
+}
+/* Tablet và Mobile chung (Dưới 992px) */
+@media (max-width: 991px) {
+  .nav-logo { 
+    width: 100px; /* Nhỏ lại một chút so với bản cũ */
+  }
+  .navbar-collapse {
+    background: white;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid rgba(231, 76, 60, 0.1); /* Viền đỏ nhạt tạo điểm nhấn */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-logo { 
+    width: 85px; /* Thu nhỏ tối đa để giữ Navbar nằm trên 1 hàng */
+  }
+  .navbar {
+    padding: 10px 0; /* Giảm padding của toàn bộ nav trên mobile */
+  }
+  .custom-toggler {
+    padding: 4px 8px; /* Thu nhỏ nút hamburger một chút */
+  }
 }
 
 .nav-link {
   color: var(--text-dark) !important;
-  font-size: 0.85rem;
   font-weight: 700;
-  margin: 0 10px;
-  position: relative;
   text-transform: uppercase;
+  font-size: 0.8rem;
   letter-spacing: 1px;
+  margin: 0 10px;
 }
 
-/* Hiệu ứng gạch chân khi hover cho chuyên nghiệp */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--primary-red);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.nav-link:hover {
-  color: var(--primary-red) !important;
-}
-
-/* Nút Hire Me nổi bật */
 .btn-action {
   border: 2px solid var(--text-dark) !important;
-  background: transparent;
-  padding: 10px 25px !important;
-  font-family: 'Space Mono', monospace; /* Font kiểu lập trình viên */
+  padding: 8px 20px !important;
+  font-family: 'Space Mono', monospace;
 }
 
 .btn-action:hover {
   background: var(--text-dark) !important;
-  color: #fff !important;
-  transform: translateY(-3px);
-}
-
-.btn-action::after { display: none; } /* Bỏ gạch chân cho nút action */
-
-/* Hamburger Menu Icon */
-.custom-toggler .toggler-icon {
-  display: block;
-  width: 28px;
-  height: 2px;
-  background-color: var(--text-dark);
-  position: relative;
-  transition: 0.3s;
-}
-
-.custom-toggler .toggler-icon::before,
-.custom-toggler .toggler-icon::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: var(--text-dark);
-}
-
-.custom-toggler .toggler-icon::before { top: -8px; }
-.custom-toggler .toggler-icon::after { bottom: -8px; }
-
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background: white;
-    margin-top: 20px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-  }
-  .nav-link { margin: 15px 0; }
+  color: white !important;
 }
 </style>
