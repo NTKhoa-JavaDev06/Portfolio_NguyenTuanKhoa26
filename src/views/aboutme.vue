@@ -11,7 +11,7 @@
             <div v-for="(skill, index) in skills" 
                  :key="index" 
                  :class="['brand-badge', skill.class]">
-              <img :src="skill.img" :alt="skill.name" class="logo-img" :title="skill.name">
+              <img :src="skill.img" :alt="skill.name" class="logo-img">
             </div>
           </div>
         </div>
@@ -25,15 +25,9 @@
             </h2>
             
             <div class="content-text text-secondary mb-4">
-              <p class="lead">
-                Hi there! I'm <strong>Nguyen Tuan Khoa</strong>, a Software Engineering student at <strong>FPT Polytechnic</strong>.
-              </p>
-              <p>
-                I am deeply passionate about architecting robust <strong>Backend systems</strong> with a focus on <strong>Java</strong> technology. My current goal is to leverage my technical skills in a <strong>Junior Java Developer</strong> role within a professional environment.
-              </p>
-              <p>
-                Beyond my academic studies, managing a small business has sharpened my problem-solving abilities and instilled a strong sense of responsibility in every project I undertake.
-              </p>
+              <p class="lead">Hi there! I'm <strong>Nguyen Tuan Khoa</strong>, a Software Engineering student at <strong>FPT Polytechnic</strong>.</p>
+              <p>I am deeply passionate about architecting robust <strong>Backend systems</strong> with a focus on <strong>Java</strong> technology.</p>
+              <p>Beyond my academic studies, managing a small business has sharpened my problem-solving abilities and instilled a strong sense of responsibility.</p>
             </div>
 
             <div class="row g-4">
@@ -67,37 +61,18 @@ const skills = [
 </script>
 
 <style scoped>
-/* Giữ nguyên phần Style bạn đã gửi vì nó đã rất đẹp và chuẩn rồi */
 .letter-spacing-2 { letter-spacing: 2px; }
-.about-img-wrapper {
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.main-img-container {
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.main-profile-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.5s ease;
-}
-.about-img-wrapper:hover .main-profile-img {
-  transform: scale(1.05);
-}
+.about-img-wrapper { position: relative; max-width: 400px; margin: 0 auto; padding: 20px; }
+.main-img-container { overflow: hidden; }
+.main-profile-img { width: 100%; height: auto; display: block; transition: 0.5s ease; }
+.about-img-wrapper:hover .main-profile-img { transform: scale(1.05); }
+
 .brand-badge {
-  position: absolute;
-  background: white;
-  padding: 12px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-  z-index: 2;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: absolute; background: white; padding: 12px; border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12); z-index: 2; transition: 0.4s ease;
 }
 .logo-img { width: 40px; height: 40px; object-fit: contain; }
+
 .b-sql { top: 10%; right: -10px; animation: float 4s infinite ease-in-out; }
 .b-vue { top: 35%; right: -25px; animation: float 3.5s infinite ease-in-out 0.5s; }
 .b-bootstrap { top: 60%; right: -10px; animation: float 4.5s infinite ease-in-out 1s; }
@@ -108,17 +83,10 @@ const skills = [
   50% { transform: translateY(-12px); }
 }
 
-.about-img-wrapper:hover .brand-badge { right: 0px; }
-
 @media (max-width: 991px) {
   .about-img-wrapper { max-width: 320px; }
-  .brand-badge { padding: 8px; }
   .logo-img { width: 30px; height: 30px; }
+  .brand-badge { padding: 8px; }
   .b-sql, .b-vue, .b-bootstrap { right: 5px; }
-  .b-intellij { right: 30px; }
 }
-
-@media (max-width: 576px) {
-  .display-5 { font-size: 2rem; }
-}
-</style>gi
+</style>

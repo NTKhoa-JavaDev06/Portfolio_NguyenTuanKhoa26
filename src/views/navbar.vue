@@ -29,8 +29,6 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-
-// Import trực tiếp Bootstrap JS để Vercel có thể build được
 import * as bootstrap from 'bootstrap'; 
 
 const isScrolled = ref(false);
@@ -42,7 +40,6 @@ onMounted(() => {
   document.querySelectorAll('.nav-link').forEach(l => {
     l.addEventListener('click', () => {
       if (window.innerWidth < 992 && menu.classList.contains('show')) {
-        // Sử dụng biến bootstrap vừa import ở trên
         const bs = bootstrap.Collapse.getInstance(menu) || new bootstrap.Collapse(menu);
         bs.hide();
       }
@@ -81,7 +78,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll));
 @media (max-width: 991px) {
   .navbar { background: white; padding: 12px 0; }
   .nav-logo { width: 90px; }
-  .hamburger-box { width: 24px; height: 18px; display: flex; align-items: center; }
+  .hamburger-box { width: 24px; height: 18px; display: flex; align-items: center; position: relative; }
   .toggler-icon, .toggler-icon::before, .toggler-icon::after {
     width: 100%; height: 2px; background: var(--dark); position: absolute; transition: 0.3s;
   }
