@@ -29,20 +29,27 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
+
+// Import trực tiếp Bootstrap JS để Vercel có thể build được
+import * as bootstrap from 'bootstrap'; 
+
 const isScrolled = ref(false);
 const handleScroll = () => { isScrolled.value = window.scrollY > 50; };
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
   const menu = document.getElementById('navbarNav');
   document.querySelectorAll('.nav-link').forEach(l => {
     l.addEventListener('click', () => {
       if (window.innerWidth < 992 && menu.classList.contains('show')) {
+        // Sử dụng biến bootstrap vừa import ở trên
         const bs = bootstrap.Collapse.getInstance(menu) || new bootstrap.Collapse(menu);
         bs.hide();
       }
     });
   });
 });
+
 onUnmounted(() => window.removeEventListener('scroll', handleScroll));
 </script>
 
