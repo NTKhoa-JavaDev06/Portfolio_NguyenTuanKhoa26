@@ -6,7 +6,7 @@
   import Skillset from "./views/Skillset.vue"
   import Experience from "./views/Experience.vue"
   import Footer from "./views/footer.vue"
-  import Contact from "./views/contact.vue"
+  import Contact from "./views/Contact.vue"
 </script>
 
 <template>
