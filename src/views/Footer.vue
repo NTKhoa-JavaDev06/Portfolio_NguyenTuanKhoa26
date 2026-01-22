@@ -31,7 +31,9 @@
       </div>
 
       <hr class="my-4 border-secondary opacity-25">
-      
+      <div class="container ">
+        <p>©2025 code by Nguyen Tuan Khoa</p>
+      </div>
    
     </div>
   </footer>
