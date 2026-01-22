@@ -7,11 +7,13 @@
   import Experience from "./views/Experience.vue"
   import Footer from "./views/Footer.vue"
   import Contact from "./views/Contact.vue"
+  
 </script>
 
 <template>
   <div class="app-container">
     <Navbar />
+    
     <main class="main-content">
       <Home />
       <Aboutme />
