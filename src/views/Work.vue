@@ -2,26 +2,29 @@
   <section id="Work" class="work-section py-5">
     <div class="container">
       <div class="mb-5 text-start header-reveal">
-        <p class="text-danger fw-bold mb-1 tracking-widest">SELECTED PORTFOLIO</p>
+        <p class="text-danger fw-bold mb-1 tracking-widest">DỰ ÁN TIÊU BIỂU</p>
         <h2 class="display-4 fw-bold text-dark">
-          Latest <span class="text-outline">Projects</span>
+          Dự án <span class="text-outline">gần đây</span>
         </h2>
       </div>
 
       <div class="row g-5">
+        <!-- Project 01 -->
         <div class="col-md-6">
           <div class="project-item">
             <div class="project-img-wrapper">
-              <img src="../img/image.png" alt="Video Website" class="img-fluid project-img">
+              <img src="../img/image.png" alt="Website Video" class="img-fluid project-img">
               <div class="project-overlay">
-                 <span class="project-year">2025</span>
+                <span class="project-year">2025</span>
               </div>
             </div>
             <div class="project-info mt-4">
               <span class="project-number">01</span>
-              <h3 class="fw-bold project-title">Entertainment Video Hub</h3>
+              <h3 class="fw-bold project-title">Nền tảng chia sẻ video giải trí</h3>
               <p class="text-muted project-desc">
-                A dynamic video-sharing platform featuring user authentication, video management, and interactive liking/sharing capabilities, inspired by YouTube's core functionalities.
+                Website chia sẻ video động với các chức năng đăng nhập người dùng,
+                quản lý video, tương tác thích và chia sẻ, lấy cảm hứng từ các
+                chức năng cốt lõi của YouTube.
               </p>
               <div class="tech-stack mt-3">
                 <span class="badge-tech">Java Servlet</span>
@@ -30,26 +33,29 @@
               </div>
               <div class="mt-4">
                 <a href="https://github.com/NTKhoa-JavaDev06" target="_blank" class="view-link">
-                  View Repository <i class="fas fa-arrow-right ms-2"></i>
+                  Xem mã nguồn <i class="fas fa-arrow-right ms-2"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Project 02 -->
         <div class="col-md-6">
           <div class="project-item">
             <div class="project-img-wrapper">
-              <img src="../img/image (4).png" alt="Car Showroom" class="img-fluid project-img">
+              <img src="../img/image (4).png"  alt="Quản lý showroom xe" class="img-fluid project-img" @click="openGallery(1)"  style="cursor: pointer;">
               <div class="project-overlay">
-                 <span class="project-year">2024</span>
+                <span class="project-year">2024</span>
               </div>
             </div>
             <div class="project-info mt-4">
               <span class="project-number">02</span>
-              <h3 class="fw-bold project-title">Vehicle Management System</h3>
+              <h3 class="fw-bold project-title">Hệ thống quản lý phương tiện</h3>
               <p class="text-muted project-desc">
-                An enterprise-grade management system designed for vehicle showrooms. It streamlines inventory tracking, customer orders, and sales reporting with a robust SQL Server integration.
+                Hệ thống quản lý theo hướng doanh nghiệp dành cho showroom xe,
+                hỗ trợ quản lý tồn kho, đơn hàng khách hàng và báo cáo doanh số
+                với tích hợp cơ sở dữ liệu SQL Server.
               </p>
               <div class="tech-stack mt-3">
                 <span class="badge-tech">JavaFX</span>
@@ -58,18 +64,127 @@
               </div>
               <div class="mt-4">
                 <a href="#" class="view-link">
-                  View Case Study <i class="fas fa-arrow-right ms-2"></i>
+                  Xem chi tiết <i class="fas fa-arrow-right ms-2"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+  <div v-if="showGallery" class="gallery-overlay" @click.self="closeGallery">
+  <button class="nav-btn left" @click="prevImage">
+    ❮</button>
+
+  <img
+    :src="currentGallery[currentIndex]"
+    class="gallery-image"
+    alt="Project gallery"
+  />
+
+  <button class="nav-btn right" @click="nextImage">❯</button>
+
+  <span class="close-btn" @click="closeGallery">✕</span>
+</div>
+
 </template>
+<script setup>
+  import { ref } from 'vue'
+  import carbia from '../img/image (4).png'
+  import car1 from '../img/anh2.jpg'
+  import car2 from '../img/QLK.jpg'
+  import car3 from '../img/LSBH.jpg'
+  import car4 from '../img/Formbanhang.jpg'
+
+  import car5 from '../img/Thongtincacnhan.png'
+  import car6 from '../img/Thanhtoan.png'
+
+const showGallery = ref(false)
+const currentIndex = ref(0)
+
+const galleries = [
+  
+  [carbia],
+  [car1 , car2, car3, car4, car5, car6]
+]
+
+const currentGallery = ref([])
+
+const openGallery = (projectIndex) => {
+  currentGallery.value = galleries[projectIndex]
+  currentIndex.value = 0
+  showGallery.value = true
+}
+
+const closeGallery = () => {
+  showGallery.value = false
+}
+
+const nextImage = () => {
+  currentIndex.value =
+    (currentIndex.value + 1) % currentGallery.value.length
+}
+
+const prevImage = () => {
+  currentIndex.value =
+    (currentIndex.value - 1 + currentGallery.value.length) %
+    currentGallery.value.length
+}
+</script>
 
 <style scoped>
+  /* Gallery Overlay */
+.gallery-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Image */
+.gallery-image {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-btn.left {
+  left: 40px;
+}
+
+.nav-btn.right {
+  right: 40px;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
 .work-section {
   background-color: #ffffff;
   padding: 100px 0;

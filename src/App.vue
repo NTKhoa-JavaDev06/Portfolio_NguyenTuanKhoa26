@@ -27,17 +27,17 @@
 </template>
 
 <style>
-/* Sử dụng thẻ style không có scoped để thiết lập cho toàn bộ trang */
+
 html {
   scroll-behavior: smooth;
 }
 
 section[id] {
-  scroll-margin-top: 100px; /* Giúp khi bấm menu, trang cuộn đến đúng vị trí không bị che */
+  scroll-margin-top: 100px;
 }
 
 .main-content {
-  padding-top: 80px; 
+  padding-top: 30px; 
 }
 
 @media (max-width: 991px) {

@@ -17,35 +17,52 @@
         </div>
 
         <div class="col-lg-7">
-          <div class="ps-lg-4">
-            <p class="text-danger fw-bold mb-1 letter-spacing-2 text-uppercase">About Me</p>
-            <h2 class="display-5 fw-bold mb-4">
-              Software Developer <br>
-              <span class="text-muted fs-3">based in Ho Chi Minh City, Vietnam</span>
-            </h2>
-            
-            <div class="content-text text-secondary mb-4">
-              <p class="lead">Hi there! I'm <strong>Nguyen Tuan Khoa</strong>, a Software Engineering student at <strong>FPT Polytechnic</strong>.</p>
-              <p>I am deeply passionate about architecting robust <strong>Backend systems</strong> with a focus on <strong>Java</strong> technology.</p>
-              <p>Beyond my academic studies, managing a small business has sharpened my problem-solving abilities and instilled a strong sense of responsibility.</p>
-            </div>
+  <div class="ps-lg-4">
+    <p class="text-danger fw-bold mb-1 letter-spacing-2 text-uppercase">Giới thiệu</p>
+    <h2 class="display-5 fw-bold mb-4">
+      Lập trình viên phần mềm <br>
+      <span class="text-muted fs-3">sống và làm việc tại TP. Hồ Chí Minh, Việt Nam</span>
+    </h2>
 
-            <div class="row g-4">
-              <div class="col-sm-6">
-                <div class="info-card border-start border-danger border-3 ps-3">
-                  <h5 class="fw-bold mb-1">Education</h5>
-                  <p class="text-muted small m-0">Software Engineering<br>FPT Polytechnic</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="info-card border-start border-danger border-3 ps-3">
-                  <h5 class="fw-bold mb-1">Career Goal</h5>
-                  <p class="text-muted small m-0">Backend Developer<br>(Internship / Junior)</p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="content-text text-secondary mb-4">
+      <p class="lead">
+        Xin chào! Mình là <strong>Nguyễn Tuấn Khoa</strong>, sinh viên ngành
+        <strong>Phát triển phần mềm</strong> tại <strong>FPT Polytechnic</strong>.
+      </p>
+      <p>
+        Mình có niềm đam mê với việc xây dựng các <strong>hệ thống Backend</strong>
+        vững chắc, tập trung chủ yếu vào công nghệ <strong>Java</strong>.
+      </p>
+      <p>
+        Bên cạnh việc học tập, quá trình quản lý một mô hình kinh doanh nhỏ đã giúp
+        mình nâng cao khả năng giải quyết vấn đề và hình thành tinh thần trách nhiệm cao trong công việc.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6">
+        <div class="info-card border-start border-danger border-3 ps-3">
+          <h5 class="fw-bold mb-1">Học vấn</h5>
+          <p class="text-muted small m-0">
+            Phát triển phần mềm<br>
+            FPT Polytechnic
+          </p>
         </div>
+      </div>
+      <div class="col-sm-6">
+      <div class="info-card border-start border-danger border-3 ps-3">
+  <h5 class="fw-bold mb-1">Mục tiêu nghề nghiệp</h5>
+  <p class="text-muted small m-0">
+    Backend Developer<br>
+    Phát triển lên vị trí Junior Backend Developer
+  </p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </section>
@@ -54,9 +71,9 @@
 <script setup>
 const skills = [
   { name: 'SQL', img: new URL('../img/sql.png', import.meta.url).href, class: 'b-sql' },
-  { name: 'Vue', img: new URL('../img/vue-js.png', import.meta.url).href, class: 'b-vue' },
+  { name: 'Vue', img: new URL('../img/Vuejs.png', import.meta.url).href, class: 'b-vue' },
   { name: 'Bootstrap', img: new URL('../img/bootstrap.png', import.meta.url).href, class: 'b-bootstrap' },
-  { name: 'IntelliJ', img: new URL('../img/logointell.jpg', import.meta.url).href, class: 'b-intellij' },
+  { name: 'IntelliJ', img: new URL('../img/java.png', import.meta.url).href, class: 'b-intellij' },
 ];
 </script>
 

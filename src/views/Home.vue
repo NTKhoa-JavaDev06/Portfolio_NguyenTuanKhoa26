@@ -4,20 +4,30 @@
       <div class="row align-items-center min-vh-100 g-5">
         
         <div class="col-lg-7 order-2 order-lg-1">
-          <p class="text-uppercase tracking-wider text-muted small fw-bold mb-2">Backend Developer</p>
-          <h1 class="display-3 fw-bold mb-4 main-title">
-            Hello, I'm <br><span class="text-danger">Nguyễn Tuấn Khoa</span><br />
-            I'm a Java Developer.
-          </h1>
-          <p class="text-secondary mb-5 hero-desc">
-            Complexity Simplified
-          </p>
+  <p class="text-uppercase tracking-wider text-muted small fw-bold mb-2">
+    Lập trình viên Backend
+  </p>
 
-          <div class="d-flex gap-3 btn-group-mobile">
-            <a href="#Work" class="btn btn-dark px-4 py-2 rounded-0">My Projects</a>
-            <a href="#Contact" class="btn btn-outline-dark px-4 py-2 rounded-0">Contact</a>
-          </div>
-        </div>
+  <h1 class="display-3 fw-bold mb-4 main-title">
+    Xin chào! Tôi là <br>
+    <span class="text-danger">Nguyễn Tuấn Khoa</span><br />
+    Lập trình viên Backend
+  </h1>
+
+  <p class="text-secondary mb-5 hero-desc">
+    Đơn giản hóa những hệ thống phức tạp
+  </p>
+
+  <div class="d-flex gap-3 btn-group-mobile">
+    <a href="#Work" class="btn btn-dark px-4 py-2 rounded-0">
+      Dự án của tôi
+    </a>
+    <a href="#Contact" class="btn btn-outline-dark px-4 py-2 rounded-0">
+      Liên hệ
+    </a>
+  </div>
+</div>
+
 
         <div class="col-lg-5 order-1 order-lg-2 text-center">
           <div class="signature-wrapper">

@@ -2,24 +2,27 @@
   <section id="Experience" class="py-5 bg-white">
     <div class="container">
       <div class="mb-5 text-start">
-        <p class="text-danger fw-bold mb-1 tracking-widest">MY JOURNEY</p>
-        <h2 class="display-5 fw-bold text-dark">Experience & <span class="text-outline">Projects</span></h2>
+        <p class="text-danger fw-bold mb-1 tracking-widest">HÀNH TRÌNH CỦA TÔI</p>
+        <h2 class="display-5 fw-bold text-dark">
+          Kinh nghiệm & <span class="text-outline">Dự án</span>
+        </h2>
       </div>
 
       <div class="timeline-container">
+        <!-- 2025 Project -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="row">
             <div class="col-md-4">
               <h4 class="fw-bold text-danger">2025</h4>
-              <p class="text-muted small">Academic Full-stack Project</p>
+              <p class="text-muted small">Dự án Full-stack học tập</p>
             </div>
             <div class="col-md-8">
-              <h3 class="fw-bold h4">Entertainment Video Hub (Java Web)</h3>
+              <h3 class="fw-bold h4">Nền tảng chia sẻ video giải trí (Java Web)</h3>
               <p class="text-secondary">
-                Developed a dynamic video-sharing platform. This project allowed me to master 
-                <strong>Session Management</strong>, <strong>User Authentication</strong>, and 
-                handling complex data relationships in SQL Server.
+                Phát triển nền tảng chia sẻ video động. Dự án giúp mình nắm vững
+                <strong>quản lý Session</strong>, <strong>xác thực người dùng</strong> và
+                xử lý các mối quan hệ dữ liệu phức tạp trong SQL Server.
               </p>
               <div class="tech-used mb-3">
                 <span class="badge-sm">Java Servlet</span>
@@ -29,40 +32,45 @@
             </div>
           </div>
         </div>
-        <div class="timeline-item">
-  <div class="timeline-dot bg-warning"></div>
-  <div class="row">
-    <div class="col-md-4">
-      <h4 class="fw-bold text-warning">June 2025</h4>
-      <p class="text-muted small">Professional Certification</p>
-    </div>
-    <div class="col-md-8">
-      <h3 class="fw-bold h4">Web Development Proficiency Certificate</h3>
-      <p class="text-secondary">
-        Issued by <strong>FPT Polytechnic</strong>. This certification validates my hands-on skills in 
-        architecting, developing, and deploying modern web applications using industry standards.
-      </p>
-      <div class="mt-2">
-        <img src="../img/chungchiweb.jpg" alt="chungchi" style="width: 60%; border-radius: 10px; ">
-       <br>
-        <span class="badge-cert">Certified by Xuongthuchanh.poly.edu.vn</span>
-      </div>
-    </div>
-  </div>
-</div>
 
+        <!-- Certificate -->
+        <div class="timeline-item">
+          <div class="timeline-dot bg-warning"></div>
+          <div class="row">
+            <div class="col-md-4">
+              <h4 class="fw-bold text-warning">06 / 2025</h4>
+              <p class="text-muted small">Chứng chỉ chuyên môn</p>
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold h4">Chứng chỉ Năng lực Phát triển Web</h3>
+              <p class="text-secondary">
+                Cấp bởi <strong>FPT Polytechnic</strong>. Chứng chỉ xác nhận năng lực
+                thực hành trong việc thiết kế, phát triển và triển khai các ứng dụng web
+                theo tiêu chuẩn hiện đại.
+              </p>
+              <div class="mt-2">
+                <img src="../img/chungchiweb.jpg" alt="chungchi" style="width: 60%; border-radius: 10px;">
+                <br>
+                <span class="badge-cert">Cấp bởi Xuongthuchanh.poly.edu.vn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2024 Desktop App -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="row">
             <div class="col-md-4">
               <h4 class="fw-bold text-danger">2024</h4>
-              <p class="text-muted small">Desktop Application</p>
+              <p class="text-muted small">Ứng dụng Desktop</p>
             </div>
             <div class="col-md-8">
-              <h3 class="fw-bold h4">Vehicle Management System</h3>
+              <h3 class="fw-bold h4">Hệ thống quản lý phương tiện</h3>
               <p class="text-secondary">
-                Built an enterprise-grade desktop system. Focused on <strong>MVC Architecture</strong>, 
-                inventory tracking algorithms, and creating professional UIs using Scene Builder.
+                Xây dựng hệ thống desktop theo hướng doanh nghiệp, tập trung vào
+                <strong>kiến trúc MVC</strong>, thuật toán quản lý tồn kho và
+                thiết kế giao diện chuyên nghiệp bằng Scene Builder.
               </p>
               <div class="tech-used mb-3">
                 <span class="badge-sm">JavaFX</span>
@@ -72,29 +80,31 @@
             </div>
           </div>
         </div>
-        
 
+        <!-- Business -->
         <div class="timeline-item border-0">
           <div class="timeline-dot bg-secondary"></div>
           <div class="row">
             <div class="col-md-4">
-              <h4 class="fw-bold text-secondary">2024 - Present</h4>
-              <p class="text-muted small">Entrepreneurship</p>
+              <h4 class="fw-bold text-secondary">2024 - Hiện tại</h4>
+              <p class="text-muted small">Kinh doanh</p>
             </div>
             <div class="col-md-8">
-              <h3 class="fw-bold h4">Small Business Owner</h3>
+              <h3 class="fw-bold h4">Chủ mô hình kinh doanh nhỏ</h3>
               <p class="text-secondary">
-                Managing a local beverage shop. This real-world experience sharpened my 
-                <strong>Problem-solving</strong> skills and taught me how to handle 
-                customer requirements effectively.
+                Quản lý cửa hàng đồ uống địa phương. Trải nghiệm thực tế này giúp mình
+                nâng cao kỹ năng <strong>giải quyết vấn đề</strong> và khả năng
+                nắm bắt, xử lý yêu cầu của khách hàng hiệu quả.
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 </template>
+
 <style scoped>
 .text-outline {
   -webkit-text-stroke: 1px #1a1a1a;
