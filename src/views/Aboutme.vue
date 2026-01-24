@@ -54,7 +54,7 @@
   <h5 class="fw-bold mb-1">Mục tiêu nghề nghiệp</h5>
   <p class="text-muted small m-0">
     Backend Developer<br>
-    Phát triển lên vị trí Junior Backend Developer
+    Phát triển lên vị trí Senior Backend Developer
   </p>
 </div>
 

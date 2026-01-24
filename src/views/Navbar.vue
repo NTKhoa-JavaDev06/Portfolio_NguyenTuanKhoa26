@@ -14,12 +14,12 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Work">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">Về Tôi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Skills">Kỹ năng</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Work">Dự án</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Experience">Kinh nghiệm</a></li>
           <li class="nav-item mt-3 mt-lg-0 ms-lg-4">
-            <a class="nav-link btn-action" href="#Contact">Hire Me</a>
+            <a class="nav-link btn-action" href="#Contact">Kết nối với Tôi</a>
           </li>
         </ul>
       </div>
