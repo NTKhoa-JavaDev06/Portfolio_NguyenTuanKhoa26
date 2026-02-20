@@ -44,7 +44,7 @@
             <div class="col-md-8">
               <h3 class="fw-bold h4">Chứng chỉ Năng lực Phát triển Web</h3>
               <p class="text-secondary">
-                Cấp bởi <strong>FPT Polytechnic</strong>. Chứng chỉ xác nhận năng lực
+                Cấp bởi <strong>FPT University</strong>. Chứng chỉ xác nhận năng lực
                 thực hành trong việc thiết kế, phát triển và triển khai các ứng dụng web
                 theo tiêu chuẩn hiện đại.
               </p>

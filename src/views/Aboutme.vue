@@ -27,7 +27,7 @@
     <div class="content-text text-secondary mb-4">
       <p class="lead">
         Xin chào! Mình là <strong>Nguyễn Tuấn Khoa</strong>, sinh viên ngành
-        <strong>Phát triển phần mềm</strong> tại <strong>FPT Polytechnic</strong>.
+        <strong>Phát triển phần mềm</strong> tại <strong>FPT University</strong>.
       </p>
       <p>
         Mình có niềm đam mê với việc xây dựng các <strong>hệ thống Backend</strong>
@@ -45,7 +45,7 @@
           <h5 class="fw-bold mb-1">Học vấn</h5>
           <p class="text-muted small m-0">
             Phát triển phần mềm<br>
-            FPT Polytechnic
+            FPT University
           </p>
         </div>
       </div>

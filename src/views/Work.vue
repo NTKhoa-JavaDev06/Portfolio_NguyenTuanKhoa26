@@ -13,7 +13,7 @@
         <div class="col-md-6">
           <div class="project-item">
             <div class="project-img-wrapper">
-              <img src="../img/image.png" alt="Website Video" class="img-fluid project-img">
+              <img src="../img/image.png" alt="Website Video" class="img-fluid project-img" @click="openGallery(1)" style="cursor: pointer;">
               <div class="project-overlay">
                 <span class="project-year">2025</span>
               </div>
@@ -32,7 +32,7 @@
                 <span class="badge-tech">SQL Server</span>
               </div>
               <div class="mt-4">
-                <a href="https://github.com/NTKhoa-JavaDev06" target="_blank" class="view-link">
+                <a href="https://github.com/NTKhoa-JavaDev06" target="_blank" class="view-link" >
                   Xem mã nguồn <i class="fas fa-arrow-right ms-2"></i>
                 </a>
               </div>
@@ -104,11 +104,38 @@
 const showGallery = ref(false)
 const currentIndex = ref(0)
 
+const showGallery2 = ref(false)
+const currentIndex2 = ref(0)
+
+const currentGallery2 = ref([])
+
+const opeGallery = (projectIndex) => {
+  currentGallery.value = galleriezs[projectIndex]
+  currentIndex.value = 0
+  showGallery.value = true
+}
+
+const closGallery = () => {
+  showGallery.value = false
+}
+
+const nexImage = () => {
+  currentIndex.value =
+    (currentIndex.value + 1) % currentGallery.value.length
+}
+
+const preImage = () => {
+  currentIndex.value =
+    (currentIndex.value - 1 + currentGallery.value.length) %
+    currentGallery.value.length
+}
+
 const galleries = [
   
   [carbia],
   [car1 , car2, car3, car4, car5, car6]
 ]
+
 
 const currentGallery = ref([])
 
