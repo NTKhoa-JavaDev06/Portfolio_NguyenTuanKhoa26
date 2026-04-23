@@ -33,29 +33,7 @@
           </div>
         </div>
 
-        <!-- Certificate -->
-        <!-- <div class="timeline-item">
-          <div class="timeline-dot bg-warning"></div>
-          <div class="row">
-            <div class="col-md-4">
-              <h4 class="fw-bold text-warning">06 / 2025</h4>
-              <p class="text-muted small">Chứng chỉ chuyên môn</p>
-            </div>
-            <div class="col-md-8">
-              <h3 class="fw-bold h4">Chứng chỉ Năng lực Phát triển Web</h3>
-              <p class="text-secondary">
-                Cấp bởi <strong>FPT University</strong>. Chứng chỉ xác nhận năng lực
-                thực hành trong việc thiết kế, phát triển và triển khai các ứng dụng web
-                theo tiêu chuẩn hiện đại.
-              </p>
-              <div class="mt-2">
-                <img src="../img/chungchiweb.jpg" alt="chungchi" style="width: 60%; border-radius: 10px;">
-                <br>
-                <span class="badge-cert">Cấp bởi Xuongthuchanh.poly.edu.vn</span>
-              </div>
-            </div> -->
-          <!-- </div>
-        </div>  -->
+     
 
         <!-- 2024 Desktop App -->
         <div class="timeline-item">
