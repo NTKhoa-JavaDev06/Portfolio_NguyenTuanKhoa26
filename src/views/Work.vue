@@ -70,7 +70,64 @@
             </div>
           </div>
         </div>
-
+          <!-- Project 03 -->
+        <div class="col-md-6">
+          <div class="project-item">
+            <div class="project-img-wrapper">
+              <img src="../img/Kixora.png"  alt="Quản lý showroom xe" class="img-fluid project-img" @click="openGallery(1)"  style="cursor: pointer;">
+              <div class="project-overlay">
+                <span class="project-year">2026</span>
+              </div>
+            </div>
+            <div class="project-info mt-4">
+              <span class="project-number">03</span>
+              <h3 class="fw-bold project-title">Hệ thống bán giày</h3>
+              <p class="text-muted project-desc">
+                Hệ thống quản lý theo hướng doanh nghiệp dành cho chủ shop bán giày,
+                đặt đơn hàng và áp dụng vouchers, khách hàng được xem chi tiết sản phẩm đã mua, lọc sản phẩm theo giá , màu sắc,...
+              </p>
+              <div class="tech-stack mt-3">
+                <span class="badge-tech">Springboots</span>
+                <span class="badge-tech">Thymeleaf</span>
+                <span class="badge-tech">SQL Server</span>
+              </div>
+              <div class="mt-4">
+                <a href="https://github.com/NTKhoa-JavaDev06/Kixora" class="view-link">
+                  Xem chi tiết <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="project-item">
+            <div class="project-img-wrapper">
+              <img src="../img/ASMNEWs.png"  alt="Quản lý báo đài" class="img-fluid project-img" @click="openGallery(1)"  style="cursor: pointer;">
+              <div class="project-overlay">
+                <span class="project-year">2026</span>
+              </div>
+            </div>
+            <div class="project-info mt-4">
+              <span class="project-number">04</span>
+              <h3 class="fw-bold project-title">Tin tức</h3>
+              <p class="text-muted project-desc">
+                Hệ thống quản lý trang báo, được phát triển bởi 2 thành viên và user sẽ xem được tin tức và lọc tin tức, admin sẽ quản lý bài báo, và vai trò phóng viên sẽ up các bài bào
+             
+              </p>
+              <div class="tech-stack mt-3">
+                <span class="badge-tech">Java EE</span>
+                <span class="badge-tech">JSP</span>
+                <span class="badge-tech">SQL Server</span>
+              </div>
+              <div class="mt-4">
+                <a href="https://github.com/NTKhoa-JavaDev06/Entertainment-Video-Hub" class="view-link">
+                  Xem chi tiết <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
@@ -135,6 +192,7 @@ const galleries = [
   [carbia],
   [car1 , car2, car3, car4, car5, car6]
 ]
+
 
 
 const currentGallery = ref([])

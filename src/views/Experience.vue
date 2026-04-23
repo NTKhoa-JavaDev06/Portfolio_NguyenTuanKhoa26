@@ -9,6 +9,28 @@
       </div>
 
       <div class="timeline-container">
+         <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="row">
+            <div class="col-md-4">
+              <h4 class="fw-bold text-danger">2026</h4>
+              <p class="text-muted small">Dự án quán lý bán giày</p>
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold h4">Nền tảng quán lý và bán giày (Java SpringBoots)</h3>
+              <p class="text-secondary">
+                Phát triển nền tảng bán giày cho phép người mua lựa chọn được giày mình thích và chi tiết sản phẩm (size, màu sắc), có thể <Strong>áp dụng voucher</Strong> và có <Strong>tính tiền ship</Strong> trước khi đặt hàng
+                dự án tập trung
+                xử lý các mối quan hệ dữ liệu phức tạp trong SQL Server.
+              </p>
+              <div class="tech-used mb-3">
+                <span class="badge-sm">Java Servlet</span>
+                <span class="badge-sm">JSP</span>
+                <span class="badge-sm">SQL Server</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- 2025 Project -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
@@ -22,6 +44,28 @@
               <p class="text-secondary">
                 Phát triển nền tảng chia sẻ video động. Dự án giúp mình nắm vững
                 <strong>quản lý Session</strong>, <strong>xác thực người dùng</strong> và
+                xử lý các mối quan hệ dữ liệu phức tạp trong SQL Server.
+              </p>
+              <div class="tech-used mb-3">
+                <span class="badge-sm">Java Servlet</span>
+                <span class="badge-sm">JSP</span>
+                <span class="badge-sm">SQL Server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="row">
+            <div class="col-md-4">
+              <h4 class="fw-bold text-danger">2025</h4>
+              <p class="text-muted small">Dự án Quản lý tin tức </p>
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold h4">Nền tảng chia sẻ video giải trí (Java Web)</h3>
+              <p class="text-secondary">
+                Phát triển nền tảng tin tức báo đài. Dự án giúp mình nắm vững
+                <strong>quản lý User và phân quyền</strong>,
                 xử lý các mối quan hệ dữ liệu phức tạp trong SQL Server.
               </p>
               <div class="tech-used mb-3">
@@ -64,7 +108,7 @@
           <div class="timeline-dot bg-secondary"></div>
           <div class="row">
             <div class="col-md-4">
-              <h4 class="fw-bold text-secondary">2024 - Hiện tại</h4>
+              <h4 class="fw-bold text-secondary">2024</h4>
               <p class="text-muted small">Kinh doanh</p>
             </div>
             <div class="col-md-8">
@@ -80,6 +124,7 @@
 
       </div>
     </div>
+    
   </section>
 </template>
 

@@ -11,7 +11,7 @@
       <div class="row g-5">
         <div class="col-lg-6">
           <p class="lead text-secondary mb-5">
-            Tôi đang tìm kiếm vị trí <strong>Thực tập sinh Java Developer</strong>,
+            Tôi đang tìm kiếm vị trí <strong>Intern Java Developer</strong>,
             với mong muốn phát triển lên <strong>Senior Developer</strong> sau thời gian thực tập.
             Tôi sẵn sàng học hỏi, đóng góp và đối mặt với những thử thách mới.
           </p>

@@ -14,9 +14,7 @@
     Lập trình viên Backend
   </h1>
 
-  <p class="text-secondary mb-5 hero-desc">
-    Đơn giản hóa những hệ thống phức tạp
-  </p>
+ 
 
   <div class="d-flex gap-3 btn-group-mobile">
     <a href="#Work" class="btn btn-dark px-4 py-2 rounded-0">

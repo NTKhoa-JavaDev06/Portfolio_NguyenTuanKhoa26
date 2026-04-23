@@ -62,7 +62,8 @@
               <span class="tag">SQL Server</span>
               <span class="tag">MySQL</span>
               <span class="tag">Git & GitHub</span>
-              <span class="tag">IntelliJ IDEA</span>
+               <span class="tag">Clound Dinary</span>
+              
               <span class="tag">Postman</span>
             </div>
           </div>
