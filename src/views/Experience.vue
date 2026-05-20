@@ -24,8 +24,8 @@
                 xử lý các mối quan hệ dữ liệu phức tạp trong SQL Server.
               </p>
               <div class="tech-used mb-3">
-                <span class="badge-sm">Java Servlet</span>
-                <span class="badge-sm">JSP</span>
+                <span class="badge-sm">SpringBoots</span>
+                <span class="badge-sm">Thymeleaf</span>
                 <span class="badge-sm">SQL Server</span>
               </div>
             </div>
